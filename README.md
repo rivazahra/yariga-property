@@ -1,6 +1,6 @@
 # Yariga
 
-Take a look at the app [here[](https://)](https://yariga-property-hub.netlify.app/)*
+Take a look at the app [here](https://yariga-property-hub.netlify.app/).
 
 _<sub>*initial loading of the app can be a little slow due to free hosting, please be patient.</sub>_
 
