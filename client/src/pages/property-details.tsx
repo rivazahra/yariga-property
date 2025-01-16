@@ -14,20 +14,21 @@ function checkImage(url: any) {
 const PropertyDetails = () => {
   const navigate = useNavigate()
   const { data: user } = useGetIdentity()
+
   const { id } = useParams()
+  
   const { mutate } = useDelete()
   const { queryResult } = useShow()
 
   const { data, isLoading, isError } = queryResult
 
   const propertyDetails = data?.data ?? {}
-  console.log(propertyDetails)
 
-  if (isLoading) return <div style={{ color: '#11142d' }}>loading may take a short time due to free hosting...</div>
+  if (isLoading) return <div style={{ color: '#11142d' }}>Loading may take a short time due to free hosting...</div>
   if (isError) return <div style={{ color: '#11142d' }}>error</div>
 
+  
   const isCurrentUser = user.email === propertyDetails.creator.email
-  console.log(user)
 
   const handleDeleteProperty = () => {
     // eslint-disable-next-line no-restricted-globals
